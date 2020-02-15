@@ -1,0 +1,10 @@
+ul {
+	list-style : none;
+	white-space : nowrap;
+}
+li {
+	display : inline;
+}
+img {
+	display : inline;
+}
