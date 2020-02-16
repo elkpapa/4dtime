@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'Typeface';
+	src: url('media/FONTS/Typeface.ttf');
+}
+body {
+	background-image: url("stars_giphy.gif");
+	background-repeat: repeat;
+	font-family: 'Time Papa', Courier New, monospace;
+	color: black;
+	font-size: 50px;
+}
+
+
+a {
+	color: black;
+	text-decoration: none;
+	font-weight: bolder;
+}
