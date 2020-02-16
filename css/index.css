@@ -1,0 +1,49 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 200px 200px 650px 200px 200px;
+	grid-template-areas: 
+		"worm . title . ."
+		"movingpresent branes me blockuni ."
+		". minkowski subtitle sausage ."
+		". . blurb . . ";
+	align-items: center;
+}
+
+.box {
+	background-color: white;
+}
+
+.title { grid-area: title; }
+.me { grid-area: me; }
+.blurb { grid-area: blurb; }
+.branes {
+	grid-area: branes; 
+	align-self: start; 
+	justify-self: start;
+	-webkit-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	transform: rotate(20deg);}
+.sausage {
+	grid-area: sausage; 
+	align-self: start;
+	justify-self: start;}
+.blockuni {
+	grid-area: blockuni; 
+	align-self: start; 
+	justify-self: start;
+	-webkit-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	transform: rotate(20deg);}
+.subtitle {grid-area: subtitle;}
+.minkowski {grid-area: minkowski;}
+.movingpresent {
+	grid-area: movingpresent;
+	align-self: end;
+	justify-self: end;}
+.worm { 
+	grid-area: worm;
+	align-self: flex-start
+	justify-self: flex-start;
+	-webkit-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	transform: rotate(-20deg);}
