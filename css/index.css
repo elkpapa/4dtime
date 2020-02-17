@@ -1,49 +1,77 @@
 .wrapper {
 	display: grid;
 	grid-template-columns: 200px 200px 650px 200px 200px;
-	grid-template-areas: 
-		"worm . title . ."
+	grid-template-areas:
+		"worm arrow title fourdeye ."
 		"movingpresent branes me blockuni ."
 		". minkowski subtitle sausage ."
-		". . blurb . . ";
+		". . blurb . .";
+	justify-content: center;
 	align-items: center;
+	justify-items: center;
 }
 
 .box {
 	background-color: white;
 }
 
-.title { grid-area: title; }
-.me { grid-area: me; }
-.blurb { grid-area: blurb; }
+.title	{ grid-area: title; }
+.me		{ grid-area: me; }
+.blurb	{ grid-area: blurb; }
 .branes {
 	grid-area: branes; 
 	align-self: start; 
 	justify-self: start;
 	-webkit-transform: rotate(20deg);
 	-ms-transform: rotate(20deg);
-	transform: rotate(20deg);}
+	transform: rotate(20deg);
+}
 .sausage {
 	grid-area: sausage; 
 	align-self: start;
-	justify-self: start;}
+	justify-self: start;
+}
 .blockuni {
 	grid-area: blockuni; 
 	align-self: start; 
 	justify-self: start;
 	-webkit-transform: rotate(20deg);
 	-ms-transform: rotate(20deg);
-	transform: rotate(20deg);}
-.subtitle {grid-area: subtitle;}
-.minkowski {grid-area: minkowski;}
+	transform: rotate(20deg);
+}
+.subtitle	{ grid-area: subtitle; }
+.minkowski	{ grid-area: minkowski; }
 .movingpresent {
 	grid-area: movingpresent;
 	align-self: end;
-	justify-self: end;}
+	justify-self: end;
+}
 .worm { 
 	grid-area: worm;
 	align-self: flex-start
 	justify-self: flex-start;
 	-webkit-transform: rotate(-20deg);
 	-ms-transform: rotate(-20deg);
-	transform: rotate(-20deg);}
+	transform: rotate(-20deg);
+}
+.arrow		{ grid-area: arrow; }
+.fourdeye	{ grid-area: fourdeye; }
+
+/* smaller screens */
+@media (max-width: 1500px) {
+	.wrapper {
+		grid-template-columns: 250px 250px;
+		grid-template-rows: auto auto 200px repeat(4, auto);
+		grid-template-areas:
+			"title title"
+			"me me"
+			"blurb blurb"
+			"worm movingpresent"
+			"branes blockuni"
+			"minkowski sausage"
+			"arrow fourdeye";
+	}
+	.subtitle {
+		display: none;
+	}
+}
