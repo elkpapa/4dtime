@@ -1,11 +1,11 @@
 .wrapper {
 	display: grid;
-	grid-template-columns: 200px 200px 650px 200px 200px;
+	grid-template-columns: 1fr 1fr 650px 1fr 1fr;
 	grid-template-areas: 
 		". . title . fourdeye"
 		"movingpresent branes me blockuni arrow"
 		". minkowski subtitle sausage ."
-		". . blurb . .";
+		". . blurb . jesus";
 	justify-content: center;
 	align-items: center;
 	justify-items: center;
@@ -46,17 +46,38 @@
 	align-self: end;
 	justify-self: end;
 }
-.worm { 
-	grid-area: worm;
+.arrow { 
+	grid-area: arrow;
 	align-self: flex-start
 	justify-self: flex-start;
-	-webkit-transform: rotate(-20deg);
-	-ms-transform: rotate(-20deg);
-	transform: rotate(-20deg);
+	-webkit-transform: rotate(120deg);
+	-ms-transform: rotate(120deg);
+	transform: rotate(120deg);
+}
+.fourdeye	{ grid-area: fourdeye; }
+.jesus		{ grid-area: jesus; }
+
+/* tablet, small computers */
+@media (max-width: 1450px) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr 650px 1fr;
+		grid-template-areas: 
+			"jesus title fourdeye"
+			"movingpresent me blockuni"
+			"minkowski subtitle sausage"
+			"branes blurb arrow";
+		justify-content: center;
+		align-items: center;
+		justify-items: center;
+	}
+	body {
+		background-color: lightgray;
+	}
 }
 
-/* smaller screens */
-@media (max-width: 1500px) {
+/* mobile */
+@media (max-width: 1100px) {
 	.wrapper {
 		grid-template-columns: 250px 250px;
 		grid-template-rows: auto auto 200px repeat(4, auto);
@@ -64,7 +85,7 @@
 			"title title"
 			"me me"
 			"blurb blurb"
-			"worm movingpresent"
+			"jesus movingpresent"
 			"branes blockuni"
 			"minkowski sausage"
 			"arrow fourdeye";
@@ -72,13 +93,7 @@
 	.subtitle {
 		display: none;
 	}
+	body {
+		background-color: gray;
+	}
 }
-.arrow { 
-	grid-area: arrow;
-	align-self: flex-start
-	justify-self: flex-start;
-	-webkit-transform: rotate(120deg);
-	-ms-transform: rotate(120deg);
-	transform: rotate(120deg);}
-.fourdeye{grid-area: fourdeye};
-.jesus{grid-area: jesus};
