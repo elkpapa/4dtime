@@ -11,12 +11,8 @@
 	justify-items: center;
 }
 
-.box {
-	background-color: white;
-}
-
-.title	{ grid-area: title; }
 .me		{ grid-area: me; }
+.title	{ grid-area: title; }
 .blurb	{ grid-area: blurb; }
 .branes {
 	grid-area: branes; 
@@ -56,6 +52,10 @@
 }
 .fourdeye	{ grid-area: fourdeye; }
 .jesus		{ grid-area: jesus; }
+
+
+
+
 
 /* tablet, small computers */
 @media (max-width: 1450px) {
