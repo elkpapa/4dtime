@@ -1,55 +1,44 @@
+@font-face {
+	font-family: 'Typeface';
+	src: url('media/FONTS/Typeface.ttf');
+}
+body {
+	font-family: 'Time Papa', Courier New, monospace;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+
 .wrapper {
 	display: grid;
-	grid-template-columns: 1fr 1fr 650px 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-areas: 
-		". . title . fourdeye"
-		"movingpresent branes me blockuni arrow"
-		". minkowski subtitle sausage ."
-		". . blurb . jesus";
+		". jesus . title . fourdeye ."
+		"arrow . branes me . sausage ."
+		". movingpresent . subtitle block . ."
+		". . minkowski blurb . . ."
+		". . . . . . .";
 	justify-content: center;
 	align-items: center;
 	justify-items: center;
 }
 
-.me		{ grid-area: me; }
-.title	{ grid-area: title; }
-.blurb	{ grid-area: blurb; }
-.branes {
-	grid-area: branes; 
-	align-self: start; 
-	justify-self: start;
-	-webkit-transform: rotate(20deg);
-	-ms-transform: rotate(20deg);
-	transform: rotate(20deg);
-}
-.sausage {
-	grid-area: sausage; 
-	align-self: start;
-	justify-self: start;
-}
-.blockuni {
-	grid-area: blockuni; 
-	align-self: start; 
-	justify-self: start;
-	-webkit-transform: rotate(20deg);
-	-ms-transform: rotate(20deg);
-	transform: rotate(20deg);
-}
+.me			{ grid-area: me; }
+.title		{ grid-area: title; }
+.blurb		{ grid-area: blurb; }
+.branes 	{grid-area: branes; 
+				justify-self: end; }
+.sausage 	{ grid-area: sausage; 
+				justify-self: start; }
+.block 		{ grid-area: block; 
+				justify-self: start; }
 .subtitle	{ grid-area: subtitle; }
-.minkowski	{ grid-area: minkowski; }
-.movingpresent {
-	grid-area: movingpresent;
-	align-self: end;
-	justify-self: end;
-}
-.arrow { 
-	grid-area: arrow;
-	align-self: flex-start
-	justify-self: flex-start;
-	-webkit-transform: rotate(120deg);
-	-ms-transform: rotate(120deg);
-	transform: rotate(120deg);
-}
+.minkowski	{ grid-area: minkowski; 
+				justify-self: end; }
+.movingpresent { grid-area: movingpresent; 
+				justify-self: start; }
+.arrow 		{ grid-area: arrow; 
+				justify-self: center; }
 .fourdeye	{ grid-area: fourdeye; }
 .jesus		{ grid-area: jesus; }
 
