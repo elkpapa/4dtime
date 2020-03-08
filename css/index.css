@@ -1,10 +1,11 @@
 @font-face {
-	font-family: 'Typeface';
-	src: url('media/FONTS/Typeface.ttf');
+	font-family: 'Time Papa Font';
+	src: url('../media/FONTS/Time Papa.ttf');
 }
 body {
-	font-family: 'Time Papa', Courier New, monospace;
+	font-family: 'Time Papa Font', Courier New, monospace;
 	color: black;
+	background-color: #fdfdfd;
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -14,10 +15,8 @@ body {
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-areas: 
 		". jesus . title . fourdeye ."
-		"arrow . branes me . sausage ."
-		". movingpresent . subtitle block . ."
-		". . minkowski blurb . . ."
-		". . . . . . .";
+		"arrow arrow branes me sausage . minkowski"
+		". movingpresent . blurb blurb block ." ;
 	justify-content: center;
 	align-items: center;
 	justify-items: center;
@@ -25,20 +24,19 @@ body {
 
 .me			{ grid-area: me; }
 .title		{ grid-area: title; }
-.blurb		{ grid-area: blurb; }
-.branes 	{grid-area: branes; 
+.blurb		{ grid-area: blurb;
+				width: 400px; }
+.branes 	{ grid-area: branes; 
 				justify-self: end; }
-.sausage 	{ grid-area: sausage; 
-				justify-self: start; }
+.sausage 	{ grid-area: sausage; }
 .block 		{ grid-area: block; 
 				justify-self: start; }
-.subtitle	{ grid-area: subtitle; }
+/*.subtitle	{ grid-area: subtitle; }*/
 .minkowski	{ grid-area: minkowski; 
 				justify-self: end; }
 .movingpresent { grid-area: movingpresent; 
 				justify-self: start; }
-.arrow 		{ grid-area: arrow; 
-				justify-self: center; }
+.arrow 		{ grid-area: arrow; }
 .fourdeye	{ grid-area: fourdeye; }
 .jesus		{ grid-area: jesus; }
 
