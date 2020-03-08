@@ -14,9 +14,9 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-areas: 
-		". jesus . title . fourdeye ."
-		"arrow arrow branes me sausage . minkowski"
-		". movingpresent . blurb blurb block ." ;
+		". jesus . title . fourdeye . "
+		"arrow arrow branes me . sausage minkowski"
+		". movingpresent . blurb . block ." ;
 	justify-content: center;
 	align-items: center;
 	justify-items: center;
@@ -24,16 +24,14 @@ body {
 
 .me			{ grid-area: me; }
 .title		{ grid-area: title; }
-.blurb		{ grid-area: blurb;
-				width: 400px; }
+.blurb		{ grid-area: blurb;}
 .branes 	{ grid-area: branes; 
 				justify-self: end; }
 .sausage 	{ grid-area: sausage; }
 .block 		{ grid-area: block; 
 				justify-self: start; }
 /*.subtitle	{ grid-area: subtitle; }*/
-.minkowski	{ grid-area: minkowski; 
-				justify-self: end; }
+.minkowski	{ grid-area: minkowski; }
 .movingpresent { grid-area: movingpresent; 
 				justify-self: start; }
 .arrow 		{ grid-area: arrow; }
@@ -52,7 +50,7 @@ body {
 		grid-template-areas: 
 			"jesus title fourdeye"
 			"movingpresent me blockuni"
-			"minkowski subtitle sausage"
+			"minkowski . sausage"
 			"branes blurb arrow";
 		justify-content: center;
 		align-items: center;
@@ -73,7 +71,7 @@ body {
 			"me me"
 			"blurb blurb"
 			"jesus movingpresent"
-			"branes blockuni"
+			"branes block"
 			"minkowski sausage"
 			"arrow fourdeye";
 	}
