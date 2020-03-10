@@ -24,9 +24,9 @@ a {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-areas: 
-		". jesus . title . fourdeye . "
+		". net . title . fourdeye . "
 		"arrow arrow branes me . sausage minkowski"
-		". movingpresent . blurb . block ." ;
+		". movingpresent . intro . block ." ;
 	justify-content: center;
 	align-items: center;
 	justify-items: center;
@@ -47,6 +47,7 @@ a {
 .arrow 		{ grid-area: arrow; }
 .fourdeye	{ grid-area: fourdeye; }
 .net		{ grid-area: net; }
+.intro		{ grid-area: intro; }
 
 
 
