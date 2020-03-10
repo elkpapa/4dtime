@@ -2,6 +2,7 @@
 	font-family: 'Time Papa Font';
 	src: url('../media/FONTS/Time Papa.ttf');
 }
+
 body {
 	font-family: 'Time Papa Font', Courier New, monospace;
 	color: black;
@@ -28,8 +29,13 @@ a {
 		"arrow arrow branes me . sausage minkowski"
 		". movingpresent . intro . block ." ;
 	justify-content: center;
-	align-items: center;
+	/* align-items: center; */
 	justify-items: center;
+}
+
+.box {
+    position: relative;
+    text-align: center;
 }
 
 .me			{ grid-area: me; }
@@ -40,7 +46,6 @@ a {
 .sausage 	{ grid-area: sausage; }
 .block 		{ grid-area: block; 
 				justify-self: start; }
-/*.subtitle	{ grid-area: subtitle; }*/
 .minkowski	{ grid-area: minkowski; }
 .movingpresent { grid-area: movingpresent; 
 				justify-self: start; }
@@ -49,7 +54,39 @@ a {
 .net		{ grid-area: net; }
 .intro		{ grid-area: intro; }
 
+.overlay-positioner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
+.link-circular {
+    text-decoration: none;
+    color: white;    
+    display: table-cell;
+    vertical-align: middle;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.3;
+    transition: 0.5s ease;
+}
+.link-circular:hover {
+    opacity: 1;
+}
+
+.red {
+    background-color: rgb(252, 0, 0, 0.7);
+    /* red #fc0000 */
+}
+
+.blue {
+    background-color: rgb(0, 0, 255, 0.7);
+    /* blue #0006ff; */
+}
 
 
 
