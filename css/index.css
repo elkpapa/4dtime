@@ -28,9 +28,9 @@ a {
 		"title title title"
 		"me me me"
 		"intro intro intro"
-		"net fourdeye sausage"
-		"arrow minkowski movingpresent"
-		"blocku branes .";
+		"net hypercube fourdeye"
+		"sausage arrow minkowski"
+		"blocku branes movingpresent";
 	justify-content: center;
 	align-items: center; 
 	justify-items: center;
@@ -54,6 +54,7 @@ a {
 .fourdeye	{ grid-area: fourdeye; }
 .net		{ grid-area: net; }
 .intro		{ grid-area: intro; }
+.hypercube		{ grid-area: hypercube; }
 
 .link-circular {
     text-decoration: none;
