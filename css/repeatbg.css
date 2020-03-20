@@ -3,7 +3,7 @@
 	src: url('media/FONTS/Typeface.ttf');
 }
 body {
-	background-image: url("../media/BG/stars_giphy.gif");
+	background-image: url("../media/BG/bg.gif");
 	background-repeat: repeat;
 	font-family: 'Time Papa', Courier New, monospace;
 	color: black;
