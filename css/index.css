@@ -28,9 +28,9 @@ a {
 		"title title title"
 		"me me me"
 		"intro intro intro"
-		"net hypercube fourdeye"
+		"net blocku hypercube"
 		"sausage arrow minkowski"
-		"blocku branes movingpresent";
+		"movingpresent branes fourdeye";
 	justify-content: center;
 	align-items: center; 
 	justify-items: center;
@@ -92,11 +92,12 @@ a {
 		grid-template-areas:
 			"title title"
 			"me me"
-			"blurb blurb"
-			"jesus movingpresent"
-			"branes block"
-			"minkowski sausage"
-			"arrow fourdeye";
+			"intro intro"
+			"net blocku"
+			"hypercube sausage"
+			"arrow minkowski"
+			"movingpresent branes"
+			"fourdeye";
 	}
 	.subtitle {
 		display: none;
