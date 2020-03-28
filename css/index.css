@@ -72,12 +72,12 @@ a {
     opacity: 1;
 }
 
-.red {
+.red-lg {
     background-color: rgb(252, 0, 0, 0.7);
     /* red #fc0000 */
 }
 
-.blue {
+.blue-lg {
     background-color: rgb(0, 0, 255, 0.7);
     /* blue #0006ff; */
 }
@@ -103,16 +103,26 @@ a {
 		display: none;
 	}
 
-	.red {
+	.link-circular {
+		opacity: 1;
+	}
+
+	.red-md {
 	    background-color: rgb(252, 0, 0, 0.5);
 	    /* red #fc0000 */
 	}
 
-	.blue {
+	.blue-md {
 	    background-color: rgb(0, 0, 255, 0.5);
 	    /* blue #0006ff; */
 	}
-	.link-circular {
-		opacity: 1;
+
+	.none-md {
+		opacity: 0;
 	}
+
+	.none-md:hover {
+		opacity: 0;
+	}
+
 }
