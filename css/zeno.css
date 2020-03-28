@@ -1,0 +1,38 @@
+/*
+ul {
+	list-style : none;
+	white-space : nowrap;
+}
+li {
+	display : inline;
+}
+img {
+	display : inline;
+}*/
+
+.me			{ grid-area: me; }
+.title		{ grid-area: title; }
+.blurb		{ grid-area: blurb;}
+.branes 	{ grid-area: branes; }
+.sausage 	{ grid-area: sausage; }
+.block 		{ grid-area: blocku; }
+.minkowski	{ grid-area: minkowski; }
+.movingpresent { grid-area: movingpresent; }
+.arrow 		{ grid-area: arrow; }
+.fourdeye	{ grid-area: fourdeye; }
+.net		{ grid-area: net; }
+.intro		{ grid-area: intro; }
+.hypercube		{ grid-area: hypercube; }
+
+@media (max-width: 1100px) {
+	.wrapper {
+		grid-template-columns: 250px 250px;
+		grid-template-areas:
+			"title title"
+			"me me"
+			"intro intro"
+			"net blocku"
+			"hypercube sausage"
+			"arrow minkowski"
+			"movingpresent branes"
+			"fourdeye .";
