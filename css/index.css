@@ -30,7 +30,7 @@ a {
 		"intro intro intro"
 		"net blocku hypercube"
 		"sausage arrow minkowski"
-		"movingpresent branes fourdeye";
+		"movingpresent branes corkscrew";
 	justify-content: center;
 	align-items: center; 
 	justify-items: center;
@@ -54,7 +54,7 @@ a {
 .minkowski	{ grid-area: minkowski; }
 .movingpresent { grid-area: movingpresent; }
 .branes 	{ grid-area: branes; }
-.fourdeye	{ grid-area: fourdeye; }
+.corkscrew	{ grid-area: corkscrew; }
 
 .link-circular {
     text-decoration: none;
@@ -97,7 +97,7 @@ a {
 			"hypercube sausage"
 			"arrow minkowski"
 			"movingpresent branes"
-			"fourdeye .";
+			"corkscrew .";
 	}
 	.subtitle {
 		display: none;
