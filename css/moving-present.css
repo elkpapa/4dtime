@@ -1,0 +1,62 @@
+body {
+	background-color: #fdfdfd;
+
+	cursor: url('../media/cursor.png'), auto;
+}
+
+a {
+	cursor: url('../media/clickme.png'), pointer;
+	text-decoration: none;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(750px, 5);
+	grid-template-areas: 
+		"mp1 mp2 . . ."
+		"mp6 mp7 mp8 . ."
+		". mp12 mp13 mp14 ."
+		". mp17 mp18 mp19 ."
+		". . mp23 mp24 ."
+		". . mp28 mp29 mp30"
+		". . . mp34 mp35"
+		". . . mp39 mp40"
+		". . . . nav-box";
+}
+
+.mp1			{ grid-area: mp1; }
+.mp2			{ grid-area: mp2; }
+.mp6			{ grid-area: mp6; }
+.mp7			{ grid-area: mp7; }
+.mp8			{ grid-area: mp8; }
+.mp12			{ grid-area: mp12; }
+.mp13			{ grid-area: mp13; }
+.mp14			{ grid-area: mp14; }
+.mp17			{ grid-area: mp17; }
+.mp18			{ grid-area: mp18; }
+.mp19			{ grid-area: mp19; }
+.mp23			{ grid-area: mp23; }
+.mp24			{ grid-area: mp24; }
+.mp28			{ grid-area: mp28; }
+.mp29			{ grid-area: mp29; }
+.mp30			{ grid-area: mp30; }
+.mp34			{ grid-area: mp34; }
+.mp35			{ grid-area: mp35; }
+.mp39			{ grid-area: mp39; }
+.mp40			{ grid-area: mp40; }
+.nav-box		{ grid-area: nav-box; }
+
+/* mobile 
+@media (max-width: 1100px) {
+	.wrapper {
+		grid-template-columns: 250px 250px;
+		grid-template-areas:
+			"title title"
+			"me me"
+			"intro intro"
+			"net blocku"
+			"hypercube sausage"
+			"arrow minkowski"
+			"movingpresent branes"
+			"corkscrew .";
+} */
