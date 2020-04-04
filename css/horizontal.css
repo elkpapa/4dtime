@@ -23,8 +23,12 @@ img {
 }
 
 .nav {
+	margin-right: 50px;
+}
+
+.nav > a > img {
     height: auto;
-    margin: 0px 30px 50px 10px;
+    margin-bottom: 50px;
 }
 
 @media (orientation:portrait)	{
