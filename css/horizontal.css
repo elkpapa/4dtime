@@ -21,6 +21,12 @@ img {
 	display : inline;
 	height: 100%;
 }
+
+.nav {
+    height: auto;
+    margin: 0px 30px 50px 10px;
+}
+
 @media (orientation:portrait)	{
 	img {
 		max-width: 100%;
