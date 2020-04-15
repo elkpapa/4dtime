@@ -28,9 +28,9 @@ a {
 		"title title title"
 		"me me me"
 		"intro intro intro"
-		"net blocku hypercube"
-		"sausage arrow minkowski"
-		"movingpresent branes corkscrew";
+		"net hypercube sausage"
+		"arrow minkowski movingpresent"
+		"autobio branes corkscrew";
 	justify-content: center;
 	align-items: center; 
 	justify-items: center;
@@ -47,12 +47,12 @@ a {
 /*.blurb		{ grid-area: blurb;}*/
 .intro		{ grid-area: intro; }
 .net		{ grid-area: net; }
-.block 		{ grid-area: blocku; }
 .hypercube		{ grid-area: hypercube; }
 .sausage 	{ grid-area: sausage; }
 .arrow 		{ grid-area: arrow; }
 .minkowski	{ grid-area: minkowski; }
 .movingpresent { grid-area: movingpresent; }
+.autobio 		{ grid-area: autobio; }
 .branes 	{ grid-area: branes; }
 .corkscrew	{ grid-area: corkscrew; }
 
@@ -93,10 +93,10 @@ a {
 			"title title"
 			"me me"
 			"intro intro"
-			"net blocku"
-			"hypercube sausage"
-			"arrow minkowski"
-			"movingpresent branes"
+			"net hypercube"
+			"sausage arrow"
+			"minkowski movingpresent"
+			"autobio branes"
 			"corkscrew .";
 	}
 	.subtitle {
