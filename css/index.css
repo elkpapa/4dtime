@@ -27,6 +27,7 @@ a {
 	grid-template-areas: 
 		"title title title"
 		"me me me"
+		"blurb blurb blurb"
 		"intro intro intro"
 		"net hypercube sausage"
 		"arrow minkowski movingpresent"
@@ -44,7 +45,7 @@ a {
 
 .me			{ grid-area: me; }
 .title		{ grid-area: title; }
-/*.blurb		{ grid-area: blurb;}*/
+.blurb		{ grid-area: blurb;}
 .intro		{ grid-area: intro; }
 .net		{ grid-area: net; }
 .hypercube		{ grid-area: hypercube; }
@@ -92,6 +93,7 @@ a {
 		grid-template-areas:
 			"title title"
 			"me me"
+			"blurb blurb"
 			"intro intro"
 			"net hypercube"
 			"sausage arrow"
