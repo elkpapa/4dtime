@@ -6,7 +6,7 @@
 body {
 	font-family: 'Time Papa Font', Courier New, monospace;
 	color: black;
-	background-color: #fdfdfd;
+	background-color: #fff;
 	font-size: 20px;
 	font-weight: bold;
 
@@ -19,33 +19,51 @@ body {
 
 a {
 	cursor: url('../media/clickme.png'), pointer;
+    text-decoration: none;
+    color: #0006ff;
 }
 
 .wrapper {
 	display: grid;
 	grid-template-columns: repeat(3, 250px);
+	grid-template-rows: auto auto 250px 80px auto;
 	grid-template-areas: 
 		"title title title"
 		"me me me"
-		"blurb blurb blurb"
-		"intro intro intro"
+		"intro blurb blurb"
+        ". . ."
 		"net hypercube sausage"
 		"arrow minkowski movingpresent"
-		"autobio branes corkscrew";
+		"autobio branes corkscrew"
+        "footer footer footer";
 	justify-content: center;
 	align-items: center; 
 	justify-items: center;
+    margin: 20px 50px;
 }
 
-.box {
+.wrapper div {
     position: relative;
     text-align: center;
     padding: 10px;
 }
 
+.thumbnail img { width: 150px; }
+
 .me			{ grid-area: me; }
 .title		{ grid-area: title; }
-.blurb		{ grid-area: blurb;}
+.blurb		{
+    grid-area: blurb;
+    text-align: justify !important;
+	text-justify: inter-word;
+}
+/* .blurb p { */
+    /* border:3px; */
+    /* border-style:solid; */
+    /* border-color:#fc0000; */
+    /* padding: 1em; */
+    /* padding: 20px; */
+/* } */
 .intro		{ grid-area: intro; }
 .net		{ grid-area: net; }
 .hypercube		{ grid-area: hypercube; }
@@ -56,11 +74,14 @@ a {
 .autobio 		{ grid-area: autobio; }
 .branes 	{ grid-area: branes; }
 .corkscrew	{ grid-area: corkscrew; }
-/*.origin {grid-area: origin; }*/
+.footer     {
+    grid-area: footer;
+    margin-top: 70px;
+}
 
 .link-circular {
     text-decoration: none;
-    color: white;    
+    color: white;
     display: table-cell;
     vertical-align: middle;
     height: 200px;
@@ -70,6 +91,7 @@ a {
     opacity: 0;
     transition: 0.5s ease;
 }
+
 .link-circular:hover {
     opacity: 1;
 }
@@ -86,39 +108,38 @@ a {
 
 
 
-
 /* mobile */
 @media (max-width: 1100px) {
-	.wrapper {
-		grid-template-columns: 250px 250px;
-		grid-template-areas:
-			"title title"
-			"me me"
-			"blurb blurb"
-			"intro intro"
-			"net hypercube"
-			"sausage arrow"
-			"minkowski movingpresent"
-			"autobio branes"
-			"corkscrew .";
-	}
-	.subtitle {
-		display: none;
-	}
+	/* .wrapper { */
+		/* grid-template-columns: 250px 250px; */
+        /* grid-template-rows: auto; */
+		/* grid-template-areas: */
+			/* "title title" */
+			/* "me me" */
+			/* "blurb blurb" */
+			/* "intro intro" */
+			/* "net hypercube" */
+			/* "sausage arrow" */
+			/* "minkowski movingpresent" */
+			/* "autobio branes" */
+			/* "corkscrew ." */
+            /* "footer footer"; */
+	/* } */
 
 	.link-circular {
 		opacity: 1;
 	}
 
-	.red-md {
-	    background-color: rgb(252, 0, 0, 0.5);
-	    /* red #fc0000 */
-	}
+	/* .red-md { */
+	    /* background-color: rgb(252, 0, 0, 0.5); */
+	/* } */
 
-	.blue-md {
-	    background-color: rgb(0, 0, 255, 0.5);
-	    /* blue #0006ff; */
-	}
+	/* .blue-md { */
+	    /* background-color: rgb(0, 0, 255, 0.5); */
+	/* } */
+    
+    .red-lg { background-color: rgb(252, 0, 0, 0.5); }
+    .blue-lg { background-color: rgb(0, 0, 255, 0.5); }
 
 	.none-md {
 		opacity: 0;
@@ -127,5 +148,4 @@ a {
 	.none-md:hover {
 		opacity: 0;
 	}
-
 }
