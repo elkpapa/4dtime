@@ -8,11 +8,16 @@ body {
 	font-family: 'Time Papa', Courier New, monospace;
 	color: black;
 	font-size: 50px;
+	cursor: url('../media/cursor.png'), auto;
 }
 
+area {
+  	cursor: url('../media/clickme.png'), pointer;
+}
 
 a {
 	color: black;
 	text-decoration: none;
 	font-weight: bolder;
+	cursor: url('../media/clickme.png'), pointer;
 }
