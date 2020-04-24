@@ -7,6 +7,11 @@ a {
 	text-decoration: none;
 }
 
+area {
+  	cursor: url('../media/clickme.png'), pointer;
+}
+
+
 .wrapper {
 	display: grid;
 	grid-template-columns: repeat(750px, 5);
