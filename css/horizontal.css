@@ -4,6 +4,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	overflow-y: hidden;
+	cursor: url('../media/cursor.png'), auto;
 }
 
 ul {
@@ -20,6 +21,14 @@ li {
 img {
 	display : inline;
 	height: 100%;
+}
+
+a {
+	cursor: url('../media/clickme.png'), pointer;
+}
+
+area {
+  	cursor: url('../media/clickme.png'), pointer;
 }
 
 .nav {
