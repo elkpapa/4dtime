@@ -1,7 +1,8 @@
 @font-face {
 	font-family: 'Typeface';
-	src: url('media/FONTS/Typeface.ttf');
+	src: url('../media/FONTS/Time Papa.ttf');
 }
+
 body {
 	background-image: url("../media/BG/bg.gif");
 	background-repeat: repeat;
