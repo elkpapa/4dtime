@@ -5,6 +5,7 @@ body {
 a {
 	cursor: url('../media/clickme.png'), pointer;
 	text-decoration: none;
+    color: #0006ff;
 }
 
 area {

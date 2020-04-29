@@ -2,70 +2,51 @@
 	font-family: 'Time Papa';
 	src: url('media/FONTS/Time Papa_0.ttf');
 }
+
 body {
-	background-color: white;
 	font-family: 'Time Papa', Courier New, monospace;
-	color: black;
 	font-size: 30px;
-  font-weight: bold;
+    font-weight: bold;
 	cursor: url('../media/cursor.png'), auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 80px;
-  margin-left: 80px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 80px;
 }
 
 img {
 	display: block;
 }
+
 a {
-	color: black;
 	text-decoration: none;
 	font-weight: bolder;
 	cursor: url('../media/clickme.png'), pointer;
-}
-
-/* unvisited link */
-a:link {
-  color: blue;
-}
-
-/* visited link */
-a:visited {
-  color: red;
-}
-
-/* mouse over link */
-a:hover {
-  color: limegreen;
-}
-
-/* selected link */
-a:active {
-  color: blue;
+    color: #0006ff;
 }
 
 p {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
 }
 
 h1 {
-  display: block;
-  font-size: 2em;
-  margin-top: 100px;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
+    display: block;
+    font-size: 2em;
+    margin-top: 100px;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
 
 
- .tab { margin-left: 150px; 
- }
+.tab {
+    margin-left: 150px; 
+}
 
 div {
-  word-wrap: break-word;
+    word-wrap: break-word;
 }

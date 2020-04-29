@@ -2,10 +2,9 @@
 	font-family: 'Time Papa';
 	src: url('media/FONTS/Time Papa_0.ttf');
 }
+
 body {
-	background-color: white;
 	font-family: 'Time Papa', Courier New, monospace;
-	color: black;
 	font-size: 30px;
 	font-weight: bold;
 	cursor: url('../media/cursor.png'), auto;
@@ -20,28 +19,8 @@ area {
 }
 
 a {
-	color: black;
 	text-decoration: none;
 	font-weight: bolder;
 	cursor: url('../media/clickme.png'), pointer;
-}
-
-/* unvisited link */
-a:link {
-  color: blue;
-}
-
-/* visited link */
-a:visited {
-  color: green;
-}
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a:active {
-  color: blue;
+    color: #0006ff;
 }

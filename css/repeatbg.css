@@ -6,7 +6,6 @@ body {
 	background-image: url("../media/BG/bg.gif");
 	background-repeat: repeat;
 	font-family: 'Time Papa', Courier New, monospace;
-	color: black;
 	font-size: 50px;
 	cursor: url('../media/cursor.png'), auto;
 }
@@ -16,8 +15,8 @@ area {
 }
 
 a {
-	color: black;
 	text-decoration: none;
 	font-weight: bolder;
 	cursor: url('../media/clickme.png'), pointer;
+    color: #0006ff;
 }
