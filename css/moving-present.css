@@ -5,16 +5,16 @@ body {
 a {
 	cursor: url('../media/clickme.png'), pointer;
 	text-decoration: none;
+    color: #0006ff;
 }
 
 area {
   	cursor: url('../media/clickme.png'), pointer;
 }
 
-
 .wrapper {
 	display: grid;
-	grid-template-columns: repeat(750px, 5);
+	grid-template-columns: repeat(5, 750px);
 	grid-template-areas: 
 		"mp1 mp2 . . ."
 		"mp6 mp7 mp8 . ."
