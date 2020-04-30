@@ -108,22 +108,20 @@ a {
 
 /* mobile */
 @media (max-width: 1100px) {
-	/* .wrapper { */
-		/* grid-template-columns: 250px 250px; */
-        /* grid-template-rows: auto; */
-		/* grid-template-areas: */
-			/* "title title" */
-			/* "me me" */
-			/* "blurb blurb" */
-			/* "intro intro" */
-			/* "net hypercube" */
-			/* "sausage arrow" */
-			/* "minkowski movingpresent" */
-			/* "autobio branes" */
-			/* "corkscrew ." */
-            /* "footer footer"; */
-	/* } */
-
+ .wrapper { 
+		 grid-template-columns: 250px 250px; 
+         grid-template-rows: auto; 
+		 grid-template-areas: 
+			 "title title" 
+			 "me me" 
+			 "blurb blurb" 
+			 "intro intro" 
+			 "net hypercube" 
+			 "sausage arrow" 
+			 "minkowski movingpresent" 
+			 "autobio branes" 
+			 "corkscrew ." 
+             "footer footer"; 
 	.link-circular {
 		opacity: 1;
 	}
