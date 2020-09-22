@@ -21,6 +21,7 @@ li {
 img {
 	display : inline;
 	height: 100%;
+	width: auto;
 }
 
 a {
@@ -37,6 +38,7 @@ area {
 
 .nav > a > img {
     height: auto;
+    width: 150px;
     margin-bottom: 50px;
 }
 
